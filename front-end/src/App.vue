@@ -5,6 +5,9 @@
       <nav>
         <router-link to="/"><i class="fas fa-home"></i></router-link>
         <router-link to="/dashboard"><i class="fas fa-user"></i></router-link>
+        <router-link :to="{ name: 'photo', params: { id: photo._id } }"
+          ><img :src="photo.path"
+        /></router-link>
       </nav>
     </header>
     <router-view />
