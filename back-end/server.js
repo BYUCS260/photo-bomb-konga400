@@ -35,4 +35,9 @@ app.use(cookieSession({
 const users = require("./users.js");
 app.use("/api/users", users.routes);
 
+// import photos module
+const photos = require("./photos.js");
+app.use("/api/photos", photos.routes);
+
+
 app.listen(3001, () => console.log('Server listening on port 3001!'));
